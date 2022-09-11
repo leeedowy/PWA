@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <title>PWA</title>
+    <meta name="theme-color" content="#D8CCC0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap_styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                    <span class="fs-4">Świat Grzybów</span>
+                </a>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Strona główna</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Grzyby jadalne</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Grzyby trujące</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Mykologia</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">O stronie</a></li>
+                </ul>
+            </header>
+        </div>
+    </main>
+
+    <div class="container px-4 py-5" id="custom-cards">
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('img/cantharellus_cibarius.jpeg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pieprznik jadalny</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="img/logo.png" alt="Bootstrap" width="32" height="32">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill" />
+                                </svg>
+                                <small>Lasy iglaste i liściaste</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('img/boletus_edulis.jpeg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Borowik szlachetny</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="img/logo.png" alt="Bootstrap" width="32" height="32">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill" />
+                                </svg>
+                                <small>Lasy mieszane</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                    style="background-image: url('img/leccinum_scabrum.jpeg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Koźlarz babka</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+                            <li class="me-auto">
+                                <img src="img/logo.png" alt="Bootstrap" width="32" height="32">
+                            </li>
+                            <li class="d-flex align-items-center me-3">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#geo-fill" />
+                                </svg>
+                                <small>Lasy brzozowe</small>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <svg class="bi me-2" width="1em" height="1em">
+                                    <use xlink:href="#calendar3" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 py-5" id="hanging-icons">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-2">
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#toggles2" />
+                    </svg>
+                </div>
+                <div>
+                    <h2>Dowiedz się jak zbierać grzyby</h2>
+                    <p>Czy większość grzybów jest trująca? Czy trufle są rzadkie i drogie? Znajdź odpowiedzi 
+                        na te i więcej pytań klikając w poniższy przycisk!
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Na grzybobranie!
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#cpu-fill" />
+                    </svg>
+                </div>
+                <div>
+                    <h2>Pogoda na grzyby</h2>
+                    <p>Bardzo ważnym elementem każdego grzybobrania jest pogoda. W twojej lokalizacji temperatura obecnie wynosi <span id="temperature">20</span>°C. 
+                        Kliknij w poniższy przycisk, aby sprawdzić czy odpady w Twojej lokalizcji były wystarczające!</p>
+                    <a href="#" class="btn btn-primary">
+                        Czy padało wystarczająco?
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">&copy; Projekt PWA - WSB 2022</p>
+
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Strona główna</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">O stronie</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="node_modules/bootstrap/js/bootstrap.js"></script>
+    <script src="generate-sw.js"></script>
+    <script src="weather_api.js"></script>
+</body>
+
+</html>
